@@ -31,7 +31,8 @@ public class ListPractice {
 
     // Check whether the list contains a certain string
 
-    boolean check = newList.contains("orange"); 
+    boolean check = newList.contains("orange");
+    System.out.println(check); 
 
     // Iterate over the list using a traditional for-loop.
     // Print each index and value on a separate line
