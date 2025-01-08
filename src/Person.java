@@ -7,12 +7,27 @@ public class Person {
   // Declare a public String instance variable for the name of the person
   // Declare a private int instance variable for the age of the person
 
+  public String name;
+  private int age;
+
+
 
   // Create a constructor that takes the name and age of the person
   // and assigns it to the instance variables
 
+  public Person(String name, int age)
+  {
+    this.name = name;
+    this.age = age;
+  }
+
 
   // Create a toString method that gives the name and age of the person
+
+  public String toString()
+  {
+    return "name: " + name + ", age: " + age;
+  }
 
 
   // Implement the below public instance method "birthYear"
@@ -29,24 +44,44 @@ public class Person {
    */
   // (create the instance method here)
 
+  public int birthYear(int currentYear)
+  {
+    return currentYear-age;
+  } 
+
 
   public static void main(String[] args) {
     // Create an instance of Person
 
+    Person person1 = new Person("Bob", 25);
+
     // Create another instance of Person with a different name and age and
     // assign it to a different variable
 
+    Person person2 = new Person("Jim", 20);
+
     // Print the first person
+
+    System.out.println(person1.toString());
 
     // Print the second person
 
+    System.out.println(person2.toString());
+
     // Get the name of the first person and store it in a local variable
+
+    String name = person1.name;
+    System.out.println(name);
 
     // Using the birthYear method, get the birth year of the first person
     // and store it in a local variable. Input the actual current year (e.g. 2025)
     // as the argument.
 
+    int bYear = person1.birthYear(2025);
+    
+
     // In a separate statement, print the local variable holding the birth year.
+    System.out.println("birth year: " + bYear);
 
     /**
      * Terminology!
