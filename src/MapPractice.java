@@ -18,10 +18,12 @@ public class MapPractice {
     // Get the value associated with a given key in the Map
 
     int value = newMap.get("tom");
+    System.out.println(value);
 
     // Find the size (number of key/value pairs) of the Map
 
     int size = newMap.size();
+    System.out.println(size);
 
     // Replace the value associated with a given key (the size of the Map shoukld not change)
 
@@ -30,10 +32,12 @@ public class MapPractice {
     // Check whether the Map contains a given key
 
     boolean checkKey = newMap.containsKey("tom");
+    System.out.println(checkKey);
 
     // Check whether the Map contains a given value
 
     boolean checkValue = newMap.containsValue(22);
+    System.out.println(checkValue);
     
     // Iterate over the keys of the Map, printing each key
 
