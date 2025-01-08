@@ -15,10 +15,12 @@ public class ArrayPractice
     // Get the value of the array at index 2
 
     String value = newArray[2];
+    System.out.println(value);
 
     // Get the length of the array
 
     int length = newArray.length;
+    System.out.println(length);
 
     // Iterate over the array using a traditional for loop and print out each item
 
